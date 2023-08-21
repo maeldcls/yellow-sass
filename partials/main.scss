@@ -1,0 +1,192 @@
+
+$darkgrey:#222f36;
+$purple:#6a4d8a;
+$colorfooter:#292825;
+$orange:#ffb81c;
+$title:#545454;
+$bgproject:#fbfbfb;
+
+@font-face {
+  font-family: Poppins;
+  src: url("https://fonts.google.com/specimen/Poppins");
+}
+@font-face {
+  font-family: Lato;
+  src: url("https://fonts.google.com/specimen/Lato")
+}
+@font-face {
+  font-family:PoppinsThin;
+  src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rokkitt&display=swap');
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rokkitt&display=swap');
+
+
+body, html {
+  height: 100%;
+  padding:0px;
+  margin:0px;
+  font-family: "Poppins",sans-serif;
+}
+
+h3{
+  color: $title;
+  font-family: "Lato",sans-serif;
+  font-size: 30px;
+}
+
+body>div:first-child{
+  background-image: url("../images/bkg-hero-header.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/**************NAV********************/
+header{
+  display:flex;
+  width: 100%;
+  justify-content:space-around;
+  align-items:center;
+  img{
+    height: 50px;
+  }
+  nav{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    ul{
+        display:flex;
+        line-height: 25px;
+       li{
+        list-style-type: none;
+        padding: 20px;
+        
+        a{
+          text-decoration: none;
+          color:white;
+          
+        }
+       }
+    }
+  }
+}
+
+/*********************page accueil******************/
+body>div>div{
+  color:white;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin:auto;
+  width:50%;
+  p{
+    text-align: center;
+    padding: 20px;
+  }
+  h2{
+    font-size: 45px;
+    
+    span{
+      color:$orange;
+    }
+  }
+  &>div{
+    &>button:first-child{
+      padding:10px;
+      width:150px;
+      background-color: transparent;
+      color:white;
+      border: 2px solid white;
+      margin-right:15px;
+    }
+    &>button:nth-child(2){
+      padding:12px;
+      margin-left:15px;
+      width:150px;
+      background-color: $orange;
+      color:white;
+      border-style:none;
+    }
+  }
+}
+
+/*********ABOUT****************/
+body>div:nth-child(2){
+  display: flex;
+  align-items: center;
+  margin:auto;
+  flex-direction: column;
+  width: 50%;
+  color:grey;
+  text-align: center;
+}
+
+/************Project***********/
+
+body>div:nth-child(3){
+  display: flex;
+  align-items: center;
+  margin:auto; 
+  background-color: $bgproject;
+  color: grey;
+  font-family:"Poppins",sans-serif;
+  flex-direction: column;
+}
+
+/************Portfolio*******************/
+body>div:nth-child(4){
+  display: flex;
+  flex-direction: row;
+  div{
+    img{
+      width:100%;
+    }
+  }
+}
+/***************Testimonials********************/
+
+body>div:nth-child(5){
+  background-image: url('../images/bkg-testimonial.jpg');
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  text-align: center;
+  h3{
+    color:white;
+  }
+  img{
+    border-radius: 100px;
+  }
+  &>:nth-child(3){
+    width: 50%;
+    align-items: center;
+    background-color: $purple;
+    padding: 25px;
+  }
+  
+}
+
+body>div:nth-child(6){
+
+  &>*{
+    color: lightgrey;
+  }
+&>div:last-child{
+  display: flex;
+  flex-direction: row;
+  width:60%;
+  &>div:nth-child(1){
+
+  }
+  &>div:nth-child(2){
+    
+  }
+  &>div:nth-child(3){
+    
+  }
+
+}
+ 
+}
