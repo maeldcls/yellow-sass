@@ -1,192 +1,481 @@
+$darkgrey: #222f36;
+$purple: #6a4d8a;
+$colorfooter: #292825;
+$orange: #ffb81c;
+$title: #545454;
+$bgproject: #fbfbfb;
+$saumon: #f18b6d;
 
-$darkgrey:#222f36;
-$purple:#6a4d8a;
-$colorfooter:#292825;
-$orange:#ffb81c;
-$title:#545454;
-$bgproject:#fbfbfb;
 
 @font-face {
   font-family: Poppins;
   src: url("https://fonts.google.com/specimen/Poppins");
 }
+
 @font-face {
   font-family: Lato;
   src: url("https://fonts.google.com/specimen/Lato")
 }
+
 @font-face {
-  font-family:PoppinsThin;
-  src:url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rokkitt&display=swap');
+  font-family: PoppinsThin;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rokkitt&display=swap');
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rokkitt&display=swap');
 
 
-body, html {
+body,
+html {
+  scroll-behavior: smooth;
   height: 100%;
-  padding:0px;
-  margin:0px;
-  font-family: "Poppins",sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
-h3{
+h3 {
   color: $title;
-  font-family: "Lato",sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
 }
 
-body>div:first-child{
+body>div:first-child {
   background-image: url("../images/bkg-hero-header.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /**************NAV********************/
-header{
-  display:flex;
+header {
+  display: flex;
   width: 100%;
-  justify-content:space-around;
-  align-items:center;
-  img{
+  justify-content: space-around;
+  align-items: center;
+
+  img {
     height: 50px;
   }
-  nav{
+
+  nav {
     font-family: "Lato", sans-serif;
     font-weight: 700;
-    ul{
-        display:flex;
-        line-height: 25px;
-       li{
+
+    ul {
+      display: flex;
+      line-height: 25px;
+
+      li {
         list-style-type: none;
         padding: 20px;
-        
-        a{
+
+        a {
           text-decoration: none;
-          color:white;
-          
+          color: white;
+
         }
-       }
+      }
     }
   }
 }
 
 /*********************page accueil******************/
-body>div>div{
-  color:white;
-  display:flex;
+body>div>div {
+  color: white;
+  display: flex;
   flex-direction: column;
-  align-items:center;
-  margin:auto;
-  width:50%;
-  p{
+  align-items: center;
+  margin: auto;
+  width: 50%;
+
+  p {
     text-align: center;
     padding: 20px;
   }
-  h2{
+
+  h2 {
     font-size: 45px;
-    
-    span{
-      color:$orange;
+
+    span {
+      color: $orange;
     }
   }
-  &>div{
-    &>button:first-child{
-      padding:10px;
-      width:150px;
+
+  &>div {
+    &>button:first-child {
+      padding: 10px;
+      width: 150px;
       background-color: transparent;
-      color:white;
+      color: white;
       border: 2px solid white;
-      margin-right:15px;
+      margin-right: 15px;
     }
-    &>button:nth-child(2){
-      padding:12px;
-      margin-left:15px;
-      width:150px;
+
+    &>button:nth-child(2) {
+      padding: 12px;
+      margin-left: 15px;
+      width: 150px;
       background-color: $orange;
-      color:white;
-      border-style:none;
+      color: white;
+      border-style: none;
     }
   }
 }
 
 /*********ABOUT****************/
-body>div:nth-child(2){
+body>div:nth-child(2) {
   display: flex;
   align-items: center;
-  margin:auto;
+  margin: auto;
   flex-direction: column;
   width: 50%;
-  color:grey;
+  color: grey;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 /************Project***********/
 
-body>div:nth-child(3){
+body>div:nth-child(3) {
   display: flex;
   align-items: center;
-  margin:auto; 
+  margin: auto;
   background-color: $bgproject;
   color: grey;
-  font-family:"Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 /************Portfolio*******************/
-body>div:nth-child(4){
+body>div:nth-child(4) {
   display: flex;
   flex-direction: row;
-  div{
-    img{
-      width:100%;
+
+  div {
+    img {
+      width: 100%;
     }
   }
 }
+
 /***************Testimonials********************/
 
-body>div:nth-child(5){
+body>div:nth-child(5) {
   background-image: url('../images/bkg-testimonial.jpg');
-  color:white;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+
+  h3 {
+    color: white;
+  }
+
+  img {
+    border-radius: 100px;
+  }
+
+  &>:nth-child(3) {
+    width: 50%;
+    align-items: center;
+    background-color: $purple;
+    padding: 25px;
+    margin-bottom: 0px;
+  }
+
+  &>:nth-child(4) {
+    background-color: $purple;
+    color: $purple;
+    width: 40px;
+    height: 30px;
+    margin-top: 0px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+
+}
+
+/*****************Services****************/
+body>div:nth-child(6) {
+
+  &>* {
+    color: lightgrey;
+  }
+
+  &>div>p {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 50px;
+  }
+
+  &>div:last-child {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+
+    &>div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
+      padding-bottom: 50px;
+
+
+
+
+      &:nth-child(1) {
+        p {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        h4 {
+          color: $saumon;
+          font-size: 25px;
+          margin: 10px;
+        }
+
+        svg {
+          fill: $saumon;
+        }
+      }
+
+      &:nth-child(2) {
+        p {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        h4 {
+          color: $orange;
+          font-size: 25px;
+          margin: 10px;
+
+        }
+
+        svg {
+          fill: $orange;
+        }
+      }
+
+      &:nth-child(3) {
+        margin: 0px;
+
+        p {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        h4 {
+          color: $purple;
+          font-size: 25px;
+          margin: 10px;
+        }
+
+        svg {
+          fill: $purple;
+          margin: 0px;
+        }
+      }
+
+    }
+  }
+}
+/**************Blog**********/
+body>div:nth-child(7) {
+  background-color: $darkgrey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin:auto;
-  text-align: center;
+
   h3{
     color:white;
   }
-  img{
-    border-radius: 100px;
-  }
-  &>:nth-child(3){
-    width: 50%;
-    align-items: center;
-    background-color: $purple;
-    padding: 25px;
-  }
-  
-}
-
-body>div:nth-child(6){
-
-  &>*{
+  p{
     color: lightgrey;
   }
-&>div:last-child{
-  display: flex;
-  flex-direction: row;
-  width:60%;
-  &>div:nth-child(1){
+  a{
+    padding:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $orange;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 10%;
+    text-align: center;
+  }
+
+  &>div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+
+    &>div:nth-child(1){
+      width:300px;
+      background-color: white;
+      color:$darkgrey;
+      margin:20px;
+      p{
+        margin-top: 0px;
+        padding-top:0px;
+        text-align: left;
+      }
+      h4{
+        width: 70%;
+        display: flex;
+        padding-left: 30px;
+        height: 54px;
+      }
+      a{
+        background-color: transparent;
+        color:$orange;
+        display: flex;
+        width:100px;
+        padding: 30px;
+        
+      }
+      &>div{
+        width:300px;
+        img{
+          width: 300px;
+          object-fit: contain;
+        }
+      }
+    }
+    &>div:nth-child(2){
+      width:300px;
+      background-color: white;
+      color:$darkgrey;
+      margin:20px;
+      p{
+        margin-top: 0px;
+        padding-top:0px;
+       text-align: left;
+      }
+      h4{
+        width: 70%;
+        display: flex;
+        padding-left: 30px;
+      }
+      div{
+        width:300px;
+        img{
+          width: 300px;
+          object-fit: contain;
+        }
+      }
+      a{
+        background-color: transparent;
+        color:$orange;
+        display: flex;
+        width:100px;
+        padding: 30px;
+      }
+      
+    }
+    &>div:nth-child(3){
+      width:300px;
+      background-color: white;
+      color:$darkgrey;
+      p{
+        margin-top: 0px;
+        padding-top:0px;
+        text-align: left;
+      }
+      h4{
+        padding-bottom: 0px;
+        height: 54px;
+        width: 70%;
+        display: flex;
+        padding-left: 30px;
+      }
+      &>div{
+        width:300px;
+        img{
+          width: 300px;
+          object-fit: contain;
+        }
+      }
+      a{
+        background-color: transparent;
+        color:$orange;
+        display: flex;
+        width:100px;
+        padding: 30px;
+      }
+    }
+  }
+}
+/************Our team****************/
+body>div:nth-child(8) {
+  background-image: url('../images/bkg-counter.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  padding: 50px;
+
+    table{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      tr{
+      
+        color: white;
+        font-size:30px;
+        list-style-type: none;
+        td{
+          padding: 40px;
+          font-weight:700;
+          
+        }
+        &>td:nth-child(2){
+          border-left: 2px solid white;
+          border-right: 2px solid white;
+        }
+          
+     }
+  }
+}/************contact us***************/
+
+body>div:nth-child(9) {
+ 
+  h2{
+    color: $darkgrey;
 
   }
-  &>div:nth-child(2){
-    
-  }
-  &>div:nth-child(3){
-    
-  }
 
+   color:grey;
+    table{
+      width:80%;
+      display: flex;
+      justify-content: center;
+      margin:auto;
+      height: 50px;
+      td:first-child{
+        color:$orange;
+        border-right:1px solid lightgrey;
+        height:40px;
+        padding:10px;
+      }
+      td:nth-child(2){
+        display: flex;
+        text-align: left;
+      }
+    }
 }
  
-}
